@@ -1,12 +1,30 @@
+@use '../../styles/variables' as *; 
+
 .navBar{
     max-height: 5rem;
-    border: 2px solid black;
+    color: $secondary-white;
+    margin-top: 2rem;
     
     &__content{
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+
+        &-profile-container{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
     }
     &__logo{
         height: 4.5rem;
+    }
+
+    &__profile-avatar{
+        border-radius: 50%;
+        width: 4rem;
+        height: 4rem;
+        margin: 0 1rem;
     }
 }

@@ -1,4 +1,6 @@
 @use './styles/variables' as *;
+@use './styles/globals' as *;
+
 
 *{
     background-color: $secondary-blue;
