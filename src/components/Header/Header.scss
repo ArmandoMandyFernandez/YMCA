@@ -1,0 +1,12 @@
+.navBar{
+    max-height: 5rem;
+    border: 2px solid black;
+    
+    &__content{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo{
+        height: 4.5rem;
+    }
+}
