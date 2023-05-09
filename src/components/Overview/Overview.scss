@@ -1,0 +1,12 @@
+@use '../../styles/variables' as *;
+
+.overview{
+    border: 2px solid black;
+    width: 90%;
+    height: 40rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-right: .25rem;
+    border-radius: 8px;
+    box-shadow: $secondary-black 0px 3px 8px;
+}

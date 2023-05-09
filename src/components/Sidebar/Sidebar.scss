@@ -1,5 +1,33 @@
+@use '../../styles/variables' as *;
+.sidebar{
+    box-shadow: $secondary-black 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    height: 40rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    background-color: $secondary-gray;
+    overflow: hidden;
 
-*{
-    border: 2px solid black;
+    &__subheader{
+        color: $secondary-white; 
+        background-color: $secondary-gray;
+        margin: 1rem;
 
+        &-container{
+            background-color: $secondary-gray;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding:  0 1rem;
+            padding-top: .2rem;
+        }
+    }
+    &__icon{
+        height: 2rem;
+        width: 2rem;
+        background-color: $secondary-gray;
+    }
 }
