@@ -1,0 +1,14 @@
+@use '../../styles/variables' as *;
+
+.income{
+    border: 2px solid rgb(0, 255, 4);
+    border-radius: 8px;
+    width: 49%;
+    height: 30%;
+    color: $secondary-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem;
+}
