@@ -1,0 +1,44 @@
+@use "../../styles/variables" as *;
+
+.hero {
+    color: $secondary-white;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 2.25rem;
+    margin: auto;
+    // background: rgb(44, 62, 80);
+    // background: linear-gradient(
+    //     90deg,
+    //     rgba(44, 62, 80, 1) 0%,
+    //     rgba(255, 255, 255, 1) 50%,
+    //     rgba(46, 72, 152, 1) 94%
+    // );
+    &__content{
+        background-color: transparent;
+        &-container {
+            width: 50%;
+            padding: 1rem;
+            background-color: transparent;
+        }
+    }
+    &__button{
+        padding: 1rem 2rem;
+        border-radius: 8px;
+        color: $secondary-white;
+        background-color: $primary-blue;
+        border: none;
+    }
+    &__image-container {
+        width: 50%;
+        padding: 1rem;
+        margin: auto;
+        background-color: transparent;
+    }
+    &__image {
+        width: 30rem;
+        height: 30rem;
+        background-color: transparent;
+    }
+}

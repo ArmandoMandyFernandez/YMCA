@@ -10,8 +10,11 @@ function Header(){
                 <img src={logo} alt="ymca logo" className='navBar__logo'/>
             </div>
             <div className='navBar__content-profile-container'>
+                {/* <button>Sign In</button>
+                <button>Login</button> */}
                 <h4 className='navBar__profile-name'>Armando Fernandez</h4>
                 <img src={profilePic} alt="profile avatar" className='navBar__profile-avatar'/>
+                <button>Log Out</button>
             </div>
         </div>
     </header>

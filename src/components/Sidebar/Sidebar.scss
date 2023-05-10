@@ -8,13 +8,14 @@
     margin-left: 1rem;
     margin-top: 1rem;
     border-radius: 8px;
-    background-color: $secondary-gray;
+    background-color: $secondary-blue;
     overflow: hidden;
 
     &__subheader{
         color: $secondary-white; 
         background-color: $secondary-gray;
         margin: 1rem;
+        background-color: transparent;
 
         &-container{
             background-color: $secondary-gray;
@@ -23,11 +24,13 @@
             align-items: center;
             padding:  0 1rem;
             padding-top: .2rem;
+            background-color: transparent;
         }
     }
     &__icon{
         height: 2rem;
         width: 2rem;
         background-color: $secondary-gray;
+        background-color: transparent;
     }
 }

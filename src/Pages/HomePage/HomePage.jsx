@@ -1,11 +1,11 @@
 import './HomePage.scss';
-import construction from '../../assets/images/village people.jpg'
+
+import Hero from '../../components/Hero/Hero';
 
 function HomePage(){
     return(
         <section>
-            <h1>HOME PAGE UNDER CONSTRUCTION</h1>
-            <img src={construction} alt="" />
+            <Hero />
         </section>
     )
 }
