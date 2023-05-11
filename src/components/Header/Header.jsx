@@ -14,7 +14,7 @@ function Header(){
                 <button>Login</button> */}
                 <h4 className='navBar__profile-name'>Armando Fernandez</h4>
                 <img src={profilePic} alt="profile avatar" className='navBar__profile-avatar'/>
-                <button>Log Out</button>
+                <button className='navBar__button'>Log Out</button>
             </div>
         </div>
     </header>

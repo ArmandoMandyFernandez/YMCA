@@ -27,4 +27,12 @@
         height: 4rem;
         margin: 0 1rem;
     }
+
+    &__button{
+        padding: 1rem 2rem;
+        border-radius: 8px;
+        color: $secondary-white;
+        background-color: $primary-blue;
+        border: none;
+    }
 }
