@@ -1,13 +1,21 @@
-@use '../../styles/variables' as *;
+@use "../../styles/variables" as *;
 
-.questions{
+.questions {
     color: $secondary-white;
-    &__form{
+    padding: 1rem;
+    &__form {
         display: flex;
         flex-direction: column;
-        &-input{
+        &-input {
             background-color: $secondary-white;
-            border-radius: .5rem;
+            border-radius: 0.5rem;
+        }
+        &-button {
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            color: $secondary-white;
+            background-color: $primary-blue;
+            border: none;
         }
     }
 }
