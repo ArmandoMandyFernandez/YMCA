@@ -21,7 +21,7 @@ function Hero() {
                 >
                     Get Started
                 </button>
-                {openLogin && <Login />}
+                {openLogin && <Login closeLogin={setOpenLogin} />}
             </div>
             <div className="hero__image-container">
                 <img src={hero} alt="budgeting icon" className="hero__image" />
