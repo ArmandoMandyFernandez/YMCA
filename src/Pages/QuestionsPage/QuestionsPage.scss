@@ -1,0 +1,13 @@
+@use '../../styles/variables' as *;
+
+.questions{
+    color: $secondary-white;
+    &__form{
+        display: flex;
+        flex-direction: column;
+        &-input{
+            background-color: $secondary-white;
+            border-radius: .5rem;
+        }
+    }
+}
