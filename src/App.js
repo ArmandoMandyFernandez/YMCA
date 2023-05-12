@@ -3,7 +3,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import DashboardPage from "./Pages/DashboardPage/DashboardPage";
 import Header from "./components/Header/Header";
 import HomePage from "./Pages/HomePage/HomePage";
-import Login from "./components/Login/Login"
+import Register from "./components/Register/Register"
 import QuestionsPage from "./Pages/QuestionsPage/QuestionsPage";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
             <Header />
             <Routes>
                 <Route path="/" element={<HomePage />} />
-                <Route path="login" element={user ? <Navigate to='/'/> : <Login />} />
+                <Route path="register" element={user ? <Navigate to='/'/> : <Register />} />
                 <Route path="questions" element={<QuestionsPage />} />
                 <Route path="profile" element={<DashboardPage />} />
             </Routes>

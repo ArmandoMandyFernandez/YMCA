@@ -1,6 +1,6 @@
 @use "../../styles/variables" as *;
 
-.login {
+.register {
     width: 100%;
     height: 100%;
     background-color: $secondary-gray;
@@ -13,13 +13,14 @@
 
     &__container {
         width: 50%;
-        height: 50%;
+        height: 60%;
         border-radius: 12px;
         background-color: $secondary-blue;
         box-shadow: rgba(0, 0, 0, 0.35);
         display: flex;
         flex-direction: column;
         padding: 1.5rem;
+        overflow: hidden;
 
         &-close{
             display: flex;

@@ -1,10 +1,10 @@
 import "./Hero.scss";
 import hero from "../../assets/images/hero-image.png";
-import Login from "../Login/Login";
+import Register from "../Register/Register";
 import { useState } from "react";
 
 function Hero() {
-    const [openLogin, setOpenLogin] = useState(false);
+    const [openRegister, setOpenRegister] = useState(false);
 
     return (
         <section className="hero">
@@ -16,12 +16,12 @@ function Hero() {
                 <button
                     className="hero__button"
                     onClick={() => {
-                        setOpenLogin(true);
+                        setOpenRegister(true);
                     }}
                 >
                     Get Started
                 </button>
-                {openLogin && <Login closeLogin={setOpenLogin} />}
+                {openRegister && <Register closeRegister={setOpenRegister} />}
             </div>
             <div className="hero__image-container">
                 <img src={hero} alt="budgeting icon" className="hero__image" />
