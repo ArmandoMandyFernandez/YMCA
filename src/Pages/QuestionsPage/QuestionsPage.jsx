@@ -1,11 +1,29 @@
 // import { useState } from "react";
 import "./QuestionsPage.scss";
-import { Link } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
 import axios from "axios";
 
-function QuestionsPage() {
-    // const [error, setError] = useState("");
-    // const [success, setSuccess] = useState(false);
+function QuestionsPage({generatedId}) {
+    const navigate = useNavigate();
+    const [user, setUser]=useState([]);
+    const params = useParams();
+
+    const [error, setError] = useState("");
+    const [success, setSuccess] = useState(false);
+
+    console.log(user);
+
+    useEffect(() => {
+        axios.get(`http://localhost:8082/api/users/${generatedId}`)
+        .then((res)=>{
+                console.log(res.data)
+                setUser(res.data);
+            }
+        );
+    },[params.id])
+
+
 
     const handleAnswersSubmit = (event) => {
         event.preventDefault();
@@ -16,31 +34,32 @@ function QuestionsPage() {
         console.log("Entertainment is:",event.target.entertainment.value);
         console.log("Food is:",event.target.food.value);
 
-        //     axios
-        //         .post("http://localhost:8082/api/users/register", {
-        //             net_income: event.target.net_income.value,
-        //             housing: event.target.housing.value,
-        //             utilities: event.target.utilities.value,
-        //             transportation: event.target.transportation.value,
-        //             entertainment: event.target.entertainment.value,
-        //             food: event.target.food.value,
+            axios
+                .post("http://localhost:8082/api/answers/register", {
+                    net_income: event.target.net_income.value,
+                    housing: event.target.housing.value,
+                    utilities: event.target.utilities.value,
+                    transportation: event.target.transportation.value,
+                    entertainment: event.target.entertainment.value,
+                    food: event.target.food.value,
 
-        //         })
-        //         .then(() => {
-        //             setSuccess(true);
-        //             setError("");
-        //             event.target.reset();
-        //         })
-        //         .catch((error) => {
-        //             setSuccess(false);
-        //             setError(error.response.data);
-        //         });
+                })
+                .then(() => {
+                    setSuccess(true);
+                    setError("");
+                    event.target.reset();
+                        navigate('profile');
+                })
+                .catch((error) => {
+                    setSuccess(false);
+                    setError(error.response.data);
+                });
         };
     
 
         return (
             <section className="questions">
-                <h1>Welcome Armando !</h1>
+                <h1>Welcome {user.id.first_name} !</h1>
                 {/* above needs to be passed the first_name from users database */}
                 <h4>
                     Let's help you get started by getting some information from

@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import HomePage from "./Pages/HomePage/HomePage";
 import Register from "./components/Register/Register"
 import QuestionsPage from "./Pages/QuestionsPage/QuestionsPage";
+import LoginPage from "./Pages/LoginPage/LoginPage";
 
 function App() {
     const user = false;
@@ -14,7 +15,8 @@ function App() {
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="register" element={user ? <Navigate to='/'/> : <Register />} />
-                <Route path="questions" element={<QuestionsPage />} />
+                <Route path="login" element={<LoginPage />} />
+                <Route path="/questions" element={<QuestionsPage />} />
                 <Route path="profile" element={<DashboardPage />} />
             </Routes>
         </div>

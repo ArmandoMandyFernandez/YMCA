@@ -7,15 +7,12 @@ import { useNavigate } from "react-router-dom";
 function Register({ closeRegister }) {
     const [error, setError] = useState("");
     const [success, setSuccess] = useState(false);
-    const navigate = useNavigate();
+    
+    
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log(event.target.first_name.value);
-        console.log(event.target.last_name.value);
-        console.log(event.target.email.value);
-        console.log(event.target.password.value);
-
+        
         axios
             .post("http://localhost:8082/api/users/register", {
                 first_name: event.target.first_name.value,
@@ -23,11 +20,10 @@ function Register({ closeRegister }) {
                 email: event.target.email.value,
                 password: event.target.password.value,
             })
-            .then(() => {
+            .then((res) => {
                 setSuccess(true);
                 setError("");
                 event.target.reset();
-                navigate("/questions")
             })
             .catch((error) => {
                 setSuccess(false);
