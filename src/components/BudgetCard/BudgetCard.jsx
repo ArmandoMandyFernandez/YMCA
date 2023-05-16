@@ -20,7 +20,7 @@ function BudgetCard({
     return (
         <section className="budgetCard">
             <div className="budgetCard-container-header">
-                <h3>{name}</h3>
+                <h4>{name}</h4>
                 <p className="budgetCard-container-header-amount">{currencyFormatter.format(amount)} / 
                 {max && (
                 <span className="budgetCard-container-header-max">{currencyFormatter.format(max)}</span> 

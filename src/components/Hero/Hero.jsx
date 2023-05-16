@@ -10,7 +10,7 @@ function Hero() {
     return (
         <section className="hero">
             <div className="hero__content-container">
-                <h2 className="hero__content">Your Money Counts Also</h2>
+                <h2 className="hero__content-title">Your Money Counts Also</h2>
                 <h4 className="hero__content">
                     It's fun to stay in Budget with YMCA
                 </h4>
