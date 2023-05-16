@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Income.scss';
 import { useBudgets } from '../../Functions/FunctionsContext';
+import currencyFormatter from '../../utils';
 
 function Income() {
     const { income, setIncome } = useBudgets();
@@ -40,7 +41,7 @@ function Income() {
                 </form>
             ) : (
                 <>
-                    <h4 className='income__amount'>${income}</h4>
+                    <h4 className='income__amount'>{currencyFormatter.format(income)}</h4>
                     <button onClick={resetIncome} className='income__button-change'> Change </button>
                 </>
             )}

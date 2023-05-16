@@ -67,7 +67,7 @@ function AddExpenseModal({ show, handleClose, defaultBudgetId }) {
                     <div className="addBudgetModal__container-button">
                         <button
                             type="submit"
-                            className="addBudgetModal__button"
+                            className="addExpenseModal__button"
                         >
                             Add
                         </button>

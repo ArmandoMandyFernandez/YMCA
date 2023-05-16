@@ -1,5 +1,6 @@
 import './Expenses.scss';
-import { useBudgets } from "../../Functions/FunctionsContext"
+import { useBudgets } from "../../Functions/FunctionsContext";
+import currencyFormatter from '../../utils';
 
 
 function Expenses(){
@@ -11,7 +12,7 @@ function Expenses(){
     return(
         <section className='expenses'>
             <h4 className='expenses__total'>Total Spent:</h4>
-            <h4>${amount} / ${max}</h4>
+            <h4>{currencyFormatter.format(amount)} / {currencyFormatter.format(max)}</h4>
         </section>
     );
 }

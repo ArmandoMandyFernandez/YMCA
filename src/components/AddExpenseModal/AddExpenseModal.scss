@@ -2,4 +2,16 @@
 
 .addExpenseModal{
     color: $secondary-white;
+    &__form{
+        border: 1px solid $secondary-blue-2;
+    }
+
+    &__button{
+        color: $secondary-blue-2;
+        border: 1px solid $secondary-blue-2;
+        background-color: $secondary-white;
+        border-radius: 12px;
+        padding: .5rem 1rem;
+    }
+    
 }

@@ -5,7 +5,6 @@
     display: flex;
     
     &__container{
-        
 
         &-header{
         width: 100%;
@@ -33,7 +32,8 @@
             color: $secondary-red;
             border: 1px solid $secondary-red;
             border-radius: 12px;
-            margin-left: 150%;
+            margin-left: 5rem;
+            padding: .5rem 1rem;
         }
         &-close{
             background-color: $secondary-white;
@@ -45,8 +45,13 @@
         }
     }
 
+
     &__expenses-description{
         align-items: center;
         margin-bottom: .5rem;
     }
+}
+
+.modal-content{
+    border: 1px solid $secondary-blue-2;
 }
