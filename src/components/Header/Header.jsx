@@ -1,6 +1,6 @@
 import "./Header.scss";
 import logo from "../../assets/images/ymca-logo-transparent.png";
-import { useNavigate, Link } from "react-router-dom";
+// import { useNavigate, Link } from "react-router-dom";
 // import profilePic from '../../assets/images/FernandezArmando-rt.jpeg'
 
 function Header() {
