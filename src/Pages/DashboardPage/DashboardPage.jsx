@@ -15,7 +15,7 @@ function DashboardPage() {
         <section className="dashboard">
             {/* {isLoading ? <h1>Loading...</h1> :
             <h1>Welcome {userInfo.first_name}!</h1>}; */}
-            <Sidebar />
+            {/* <Sidebar /> */}
             <Overview />
         </section>
     );

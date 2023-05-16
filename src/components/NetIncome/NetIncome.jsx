@@ -1,4 +1,5 @@
 import { useBudgets } from '../../Functions/FunctionsContext';
+import currencyFormatter from '../../utils';
 import './NetIncome.scss';
 
 
@@ -14,7 +15,7 @@ function NetIncome(){
     return(
         <section className='expenses'>
             <h4 className='expenses__total'>Net Savings:</h4>
-            <h4>$ {netSavings}</h4>
+            <h4>{currencyFormatter.format(netSavings)}</h4>
         </section>
     );
 }

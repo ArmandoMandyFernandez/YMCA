@@ -1,5 +1,5 @@
 import "./BudgetCard.scss";
-import { currencyFormatter } from "../../utils";
+import currencyFormatter from "../../utils";
 import ProgressBar from "react-bootstrap/ProgressBar";
 
 
@@ -12,7 +12,9 @@ function BudgetCard({
 }) {
     function getProgressBarVariant(amount, max){
         const ratio = amount/max
-        if (ratio < .5) return ;
+        if (ratio < 0.5) return "primary"
+        if (ratio < 0.75) return "warning"
+        return "danger"
     }
 
     return (

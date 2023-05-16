@@ -4,7 +4,7 @@ import {
     UNCATEGORIZED_BUDGET_ID,
     useBudgets,
 } from "../../Functions/FunctionsContext";
-import { currencyFormatter } from "../../utils";
+import currencyFormatter from "../../utils";
 
 function ViewExpensesModal({ budgetId, handleClose }) {
     const { getBudgetExpenses, budgets, deleteBudget, deleteExpense } =
