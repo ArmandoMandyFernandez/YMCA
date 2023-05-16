@@ -1,0 +1,29 @@
+@use '../../styles/variables' as *;
+
+.addBudgetModal{
+    color: $secondary-white;
+    &__form{
+        border: 2px solid $primary-green;
+    }
+
+    &__container-header{
+        display: flex;
+    }
+
+    &__container-button{
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__button{
+        background-color: $secondary-white;
+        color: $secondary-purple;
+        border: 1px solid $secondary-purple;
+        font-size: 16px;
+        padding: .5rem 1rem;
+        border-radius: 12px;
+    }
+}
+
+.modal-content{
+    border: 2px solid $primary-green;
+}

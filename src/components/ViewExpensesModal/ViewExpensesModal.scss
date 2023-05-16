@@ -1,0 +1,52 @@
+@use '../../styles/variables' as *;
+
+.viewExpensesModal{
+    color: $secondary-white;
+    display: flex;
+    
+    &__container{
+        
+
+        &-header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        }
+
+        &-expenses-description{
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: .5rem;
+            
+        }
+
+        &-action{
+            display: flex;
+        }
+    
+    }
+
+    &__button{
+        &-delete{
+            background-color: $secondary-white;
+            color: $secondary-red;
+            border: 1px solid $secondary-red;
+            border-radius: 12px;
+            margin-left: 150%;
+        }
+        &-close{
+            background-color: $secondary-white;
+            color: $secondary-red;
+            border: 1px solid $secondary-red;
+            border-radius: 12px;
+            padding: .25rem .5rem;
+            margin-left: .5rem;
+        }
+    }
+
+    &__expenses-description{
+        align-items: center;
+        margin-bottom: .5rem;
+    }
+}

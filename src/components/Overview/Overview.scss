@@ -3,7 +3,7 @@
 .overview{
     border: 2px solid black;
     width: 90%;
-    height: 40rem;
+    height: 100%;
     margin-left: 1rem;
     margin-top: 1rem;
     margin-right: .25rem;
@@ -11,6 +11,7 @@
     box-shadow: $secondary-black 0px 3px 8px;
     display: flex;
     flex-direction: column;
+    padding: .5rem;
     overflow: auto;
     
     &__header-container{
@@ -19,6 +20,7 @@
         
     }
     &__footer-container{
-        height: 70%;
+        height: 100%;
+        padding: 1rem 0;
     }
 }

@@ -4,7 +4,7 @@ import { useNavigate, Link } from "react-router-dom";
 // import profilePic from '../../assets/images/FernandezArmando-rt.jpeg'
 
 function Header() {
-    // const navigate = useNavigate();
+    // 
 
     return (
         <header className="navBar">

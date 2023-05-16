@@ -1,0 +1,50 @@
+@use '../../styles/variables' as *;
+
+.budgetCard{
+    width: 100%;
+    padding: 1rem;
+    &-container-header{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: baseline;
+
+        &-amount{
+            font-size: 16px;
+            color: $secondary-white;
+        }
+
+        &-max{
+            font-size: 12px;
+            color: $secondary-gray;
+        }
+        
+    }
+
+    &-progressBar{
+        border-radius: 12px;
+    }
+
+    &-container-buttons{
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem 0;
+    }
+
+    &-button-add{
+        background-color: $secondary-white;
+        color: $secondary-blue;
+        border-color: $secondary-blue;
+        padding: .75rem 1.5rem;
+        border-radius: 12px;
+        margin: .25rem;
+    }
+    &-button-view{
+        background-color: $secondary-white;
+        color: $secondary-purple;
+        border-color: $secondary-purple;
+        padding: .75rem 1.5rem;
+        border-radius: 12px;
+        margin: .25rem;
+    }
+}

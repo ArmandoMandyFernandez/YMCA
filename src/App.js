@@ -16,7 +16,7 @@ function App() {
                 <Route path="/" element={<HomePage />} />
                 <Route path="register" element={user ? <Navigate to='/'/> : <Register />} />
                 <Route path="login" element={<LoginPage />} />
-                <Route path="/questions" element={<QuestionsPage />} />
+                <Route path="questions" element={<QuestionsPage />} />
                 <Route path="profile" element={<DashboardPage />} />
             </Routes>
         </div>

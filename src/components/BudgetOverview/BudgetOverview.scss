@@ -4,15 +4,40 @@
     border: 2px solid rgb(0, 255, 4);
     border-radius: 8px;
     width: 99%;
-    height: 90%;
+    height: 100%;
     color: $secondary-white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: .5rem;
+    margin: .25rem;
+    padding: 1rem;
     overflow: auto;
-    padding: 1rem 0;
+
+    &-container-header{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 1rem;
+    }
+    &-header{
+        &-button-add{
+            background-color: $secondary-purple;
+            color: $secondary-white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            border: none;
+            margin: 0 1rem;
+        }
+        &-button-expense{
+            background-color: $secondary-white;
+            color: $secondary-blue;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            border: none;
+            margin: 0 1rem;
+        }
+    }
 
     &__category-container{
         width: 90%;
