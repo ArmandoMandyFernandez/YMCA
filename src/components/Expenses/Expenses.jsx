@@ -10,8 +10,8 @@ function Expenses(){
 
     return(
         <section className='expenses'>
-            <h2>Total Expenses</h2>
-            <h2>${amount} / ${max}</h2>
+            <h4 className='expenses__total'>Total Expenses:</h4>
+            <h4>${amount} / ${max}</h4>
         </section>
     );
 }
