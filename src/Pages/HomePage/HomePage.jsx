@@ -7,8 +7,6 @@ import Footer from '../../components/Footer/Footer';
 
 
 function HomePage(){
-
-    
     return(
         <section>
             <Hero />
