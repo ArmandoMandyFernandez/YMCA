@@ -2,7 +2,6 @@ import { auth, googleProvider } from "../../../Config/firebase";
 import {
     createUserWithEmailAndPassword,
     signInWithPopup,
-    signOut,
 } from "firebase/auth";
 import "./EmailAuth.scss";
 import { useState } from "react";
@@ -31,15 +30,6 @@ function EmailAuth({ onLogin }) {
             console.error(err);
         }
     };
-
-    // const logOut = async () => {
-    //     try {
-    //         await signOut(auth);
-    //     } catch (err) {
-    //         console.error(err);
-    //     }
-    // };
-
 
     return (
         <section className="auth">

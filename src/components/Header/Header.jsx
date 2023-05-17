@@ -20,7 +20,7 @@ function Header() {
             }
         });
         return unsubscribe;
-    }, []);
+    }, [navigate]);
 
     const logOut = async () => {
         try {
