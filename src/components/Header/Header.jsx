@@ -1,13 +1,14 @@
 import "./Header.scss";
 import logo from "../../assets/images/ymca-logo-transparent.png";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { auth } from "../../Config/firebase";
 import { signOut } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
 
 function Header() {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
-    const navigate = useNavigate()
+    const navigate = useNavigate();
 
     useEffect(() => {
         const unsubscribe = auth.onAuthStateChanged((user) => {
@@ -15,16 +16,16 @@ function Header() {
                 setIsLoggedIn(true);
             } else {
                 setIsLoggedIn(false);
-                navigate('login')
 
             }
         });
         return unsubscribe;
-    }, [navigate]);
+    }, []);
 
     const logOut = async () => {
         try {
             await signOut(auth);
+            navigate('/');
         } catch (err) {
             console.error(err);
         }

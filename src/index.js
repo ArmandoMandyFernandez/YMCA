@@ -9,9 +9,9 @@ import BudgetProvider from "./Functions/FunctionsContext";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <BrowserRouter>
-            <BudgetProvider>
-                <App />
-            </BudgetProvider>
+        <BudgetProvider>
+            <App />
+        </BudgetProvider>
     </BrowserRouter>
 );
 

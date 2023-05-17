@@ -5,19 +5,21 @@ import Header from "./components/Header/Header";
 import HomePage from "./Pages/HomePage/HomePage";
 import LoginPage from "./Pages/LoginPage/LoginPage";
 import { auth } from "./Config/firebase";
+import BudgetProvider from "./Functions/FunctionsContext";
 
 function App() {
-
-    console.log(auth.currentUser)
+    console.log(auth.currentUser);
 
     return (
         <div className="App">
             <Header />
             <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path="login" element={<LoginPage />} />
-                <Route path="profile" element={<DashboardPage />} />
+                    <Route path="/" element={<HomePage />} />
+
+                    <Route path="login" element={<LoginPage />} />
+                    <Route path="profile" element={<DashboardPage />} />
             </Routes>
+            
         </div>
     );
 }
