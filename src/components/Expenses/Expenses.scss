@@ -1,19 +1,27 @@
 @use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
 
 .expenses{
     border: 2px solid $secondary-blue-2;
     box-shadow: 1px 5px 10px 5px rgb(45, 104, 176, .7);
     border-radius: 8px;
-    width: 33%;
-    height: 30vh;
+    width: 100%;
+    height:13rem;
     color: $secondary-white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: .5rem;
     overflow: auto;
+    margin-bottom: 1rem;
+
+    @include tablet{
+    width: 33%;
+    height: 30vh;
+    margin: .5rem;
     padding: 1rem .5rem;
+    }
 
     &__total{
         font-weight: 800;

@@ -1,22 +1,40 @@
 @use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
 
 .overview{
     border: 2px solid $secondary-blue;
-    width: 90%;
-    height: 100%;
-    margin-left: 1rem;
-    margin-top: 1rem;
-    margin-right: .25rem;
-    border-radius: 8px;
     box-shadow: $secondary-black 0px 3px 8px;
     display: flex;
     flex-direction: column;
+    width: 90%;
+    border-radius: 8px;
     padding: .5rem;
+    margin: auto;
     overflow: auto;
+    margin-top: 1rem;
+    
+    
+    @include tablet{
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-right: .25rem;
+    }
     
     &__header-container{
         display: flex;
         height: 30%;
+        flex-direction: column;
+
+        @include tablet{
+            margin: auto;
+
+        }
+
+        @include tablet{
+            flex-direction: row;
+            margin: unset;
+        }
         
     }
     &__footer-container{

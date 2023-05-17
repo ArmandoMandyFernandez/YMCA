@@ -1,15 +1,24 @@
 @use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
 
 .features{
-    height: 50vh;
+    height: 50rem;
     display: flex;
-    margin-bottom: 10rem;
+    margin-bottom: 15rem;
+    flex-direction: column;
+    padding: 2rem;
+
+    @include tablet{
+        flex-direction: row;
+        height: 20rem;
+    }
 
     &__container{
         border: 1px solid $secondary-blue-2;
         box-shadow: 1px 5px 10px 5px rgb(45, 104, 176, .7);
         width: 30%;
-        margin: 2rem;
+        margin: auto;
+        margin-bottom: 2rem;
         border-radius: 12px;
         display: flex;
         flex-direction: column;

@@ -1,4 +1,5 @@
 @use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
 
 .budgetOverview{
     border: 2px solid $secondary-blue-2;
@@ -17,20 +18,34 @@
 
     &-container-header{
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 100%;
         padding: 0 1rem;
+        margin-bottom: 1rem;
+
+        @include tablet {
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: baseline;
+        }
     }
     &-header{
         font-weight: 800;
         &-button-add{
             background-color: $secondary-blue-2;
             color: $secondary-white;
-            padding: 1rem 2rem;
             border-radius: 12px;
             border: none;
-            margin: 0 1rem;
+            padding: .5rem 1rem;
             transition: 0.3s;
+            margin: 0 1rem;
+
+            @include tablet{
+                padding: 1rem 2rem;
+
+            }
         }
         &-button-add:hover{
             background-color: $secondary-blue-3;
@@ -38,10 +53,16 @@
         &-button-expense{
             background-color: $secondary-white;
             color: $secondary-blue-2;
-            padding: 1rem 2rem;
             border-radius: 8px;
             border: none;
+            padding: .5rem 1rem;
             margin: 0 1rem;
+
+            @include tablet{
+                padding: 1rem 2rem;
+                margin-top: 1rem;
+
+            }
         }
     }
 
