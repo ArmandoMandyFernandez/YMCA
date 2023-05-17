@@ -4,12 +4,9 @@ import DashboardPage from "./Pages/DashboardPage/DashboardPage";
 import Header from "./components/Header/Header";
 import HomePage from "./Pages/HomePage/HomePage";
 import LoginPage from "./Pages/LoginPage/LoginPage";
-import { auth } from "./Config/firebase";
-import BudgetProvider from "./Functions/FunctionsContext";
+
 
 function App() {
-    console.log(auth.currentUser);
-
     return (
         <div className="App">
             <Header />
