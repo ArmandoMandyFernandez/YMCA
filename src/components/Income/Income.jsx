@@ -37,7 +37,7 @@ function Income() {
             {!isIncomeSet ? (
                 <form onSubmit={handleIncomeSubmit} className='income__form'>
                     <input type="number" onChange={handleIncomeChange} className='income__input'/>
-                    <button type="submit" className='income__button-add'> Add </button>
+                    <button type="submit" className='income__button-add'> Update </button>
                 </form>
             ) : (
                 <>

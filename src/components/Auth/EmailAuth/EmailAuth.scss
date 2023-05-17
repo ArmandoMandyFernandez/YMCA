@@ -33,18 +33,30 @@
         background-color: $secondary-blue-2;
         color: $secondary-white;
         border-radius: 8px;
+        border: none;
         padding: .5rem 1rem;
         min-width: 10.5rem;
+        transition: 0.3s;
+        
+    }
+    &__button-signin:hover{
+        background-color: $secondary-blue-3;
     }
 
     &__button-google{
         background-color: $google;
         color: $secondary-white;
         border-radius: 8px;
+        border: none;
         padding: .5rem 1rem;
         font-weight: 800;
         margin: 1rem 0;
         min-width: 10.5rem;
+        transition: 0.3s;
+    }
+
+    &__button-google:hover{
+        background-color: $google-2;
     }
 
     &__or{

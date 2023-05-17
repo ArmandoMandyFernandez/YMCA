@@ -2,14 +2,15 @@
 
 .expenses{
     border: 2px solid $secondary-blue-2;
+    box-shadow: 1px 5px 10px 5px rgb(45, 104, 176, .7);
     border-radius: 8px;
     width: 33%;
     height: 30vh;
     color: $secondary-white;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: baseline;
+    justify-content: center;
+    align-items: center;
     margin: .5rem;
     overflow: auto;
     padding: 1rem .5rem;

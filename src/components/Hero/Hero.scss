@@ -28,6 +28,10 @@
         color: $secondary-white;
         background-color: $secondary-blue-2;
         border: none;
+        transition: 0.3s;
+    }
+    &__button:hover{
+        background-color: $secondary-blue-3;
     }
     &__image-container {
         width: 50%;

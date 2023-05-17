@@ -13,8 +13,8 @@ function NetIncome(){
 
 
     return(
-        <section className='expenses'>
-            <h4 className='expenses__total'>Net Savings:</h4>
+        <section className='netIncome'>
+            <h4 className='netIncome__total'>Net Savings:</h4>
             <h4>{currencyFormatter.format(netSavings)}</h4>
         </section>
     );

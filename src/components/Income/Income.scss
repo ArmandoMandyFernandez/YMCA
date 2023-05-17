@@ -2,14 +2,15 @@
 
 .income {
     border: 2px solid $secondary-blue-2;
+    box-shadow: 1px 5px 10px 5px rgb(45, 104, 176, .7);
     border-radius: 8px;
     width: 33%;
     height: 30vh;
     color: $secondary-white;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: baseline;
+    justify-content: center;
+    align-items: center;
     margin: 0.5rem;
     overflow: auto;
     padding: 1rem 0.4rem;
@@ -17,6 +18,8 @@
     &__form{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     &__input {
@@ -30,6 +33,7 @@
     }
 
     &__button {
+        
         &-add {
             background-color: $secondary-blue-2;
             color: $secondary-white;
@@ -38,6 +42,10 @@
             border-radius: 12px;
             margin-top: .5rem;
             max-width: 5rem;
+            transition: 0.3s;
+        }
+        &-add:hover{
+            background-color: $secondary-blue-3;
         }
 
         &-change {
@@ -46,6 +54,11 @@
             padding: 0.5rem 1rem;
             border: none;
             border-radius: 12px;
+            margin-top: .5rem;
+            transition: 0.3s;
+        }
+        &-change:hover{
+            background-color: $secondary-blue-3;
         }
     }
 }
