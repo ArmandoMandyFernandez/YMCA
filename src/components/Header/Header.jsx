@@ -1,28 +1,64 @@
 import "./Header.scss";
 import logo from "../../assets/images/ymca-logo-transparent.png";
-// import { useNavigate, Link } from "react-router-dom";
-// import profilePic from '../../assets/images/FernandezArmando-rt.jpeg'
+import { Link, useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { auth } from "../../Config/firebase";
+import { signOut } from "firebase/auth";
 
 function Header() {
-    // 
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const navigate = useNavigate()
+
+    useEffect(() => {
+        const unsubscribe = auth.onAuthStateChanged((user) => {
+            if (user) {
+                setIsLoggedIn(true);
+            } else {
+                setIsLoggedIn(false);
+                navigate('login')
+
+            }
+        });
+        return unsubscribe;
+    }, []);
+
+    const logOut = async () => {
+        try {
+            await signOut(auth);
+        } catch (err) {
+            console.error(err);
+        }
+    };
 
     return (
         <header className="navBar">
             <div className="navBar__content">
                 <div className="navBar__content-container">
-                    <img src={logo} alt="ymca logo" className="navBar__logo" />
-                </div>
-                {/* <div className="navBar__content-profile-container"> */}
-                    {/* <Link to="/register">
-                        <button className="navBar__button">Sign Up</button>
+                    <Link to="/">
+                        <img
+                            src={logo}
+                            alt="ymca logo"
+                            className="navBar__logo"
+                        />
                     </Link>
-                    <Link to="/login">
-                        <button className="navBar__button">Login</button>
-                    </Link> */}
-                    {/* <h4 className='navBar__profile-name'>Armando Fernandez</h4>
-                <img src={profilePic} alt="profile avatar" className='navBar__profile-avatar'/>
-                <button className='navBar__button'>Log Out</button> */}
-                {/* </div> */}
+                </div>
+                <div className="navBar__content-profile-container">
+                    {!isLoggedIn ? (
+                        <Link to="/login">
+                            <button className="navBar__button">Login</button>
+                        </Link>
+                    ) : (
+                        <div className="navBar__loggedIn-container">
+                            <h4>Hello, {auth.currentUser.displayName}</h4>
+                            <button
+                                onClick={logOut}
+                                className="navBar__button"
+                            >
+                                Log Out
+                            </button>
+                        </div>
+                    )}
+                </div>
             </div>
         </header>
     );

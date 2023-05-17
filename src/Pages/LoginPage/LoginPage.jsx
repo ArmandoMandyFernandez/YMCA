@@ -1,21 +1,19 @@
-import InputLogin from '../../components/InputLogin/InputLogin';
-import LoginButton from '../../components/LoginButton/LoginButton';
+import EmailAuth from '../../components/Auth/EmailAuth/EmailAuth';
 import './LoginPage.scss';
+import { useNavigate } from 'react-router-dom'
 
 
 function LoginPage(){
+    const navigate = useNavigate();
+
+    const handleSuccessfulLogin = () => {
+        navigate('/profile');
+    };
 
 
     return(
         <section>
-            <form action="submit" className='login' >
-                <h1 className='login__title'>Log In</h1>
-            <InputLogin className='login__input'/>
-        
-            <LoginButton />
-            
-            
-            </form>
+            <EmailAuth onLogin={handleSuccessfulLogin}/>
         </section>
     )
 }

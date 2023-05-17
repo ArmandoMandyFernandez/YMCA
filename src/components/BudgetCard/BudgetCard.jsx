@@ -33,6 +33,7 @@ function BudgetCard({
                 min={0}
                 max={max}
                 now={amount}
+                animated
                 />
                 )}
             </div>

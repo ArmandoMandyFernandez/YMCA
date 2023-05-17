@@ -10,6 +10,8 @@ export function useBudgets() {
 
 export const UNCATEGORIZED_BUDGET_ID = "Uncategorized"
 
+
+
 const BudgetProvider = ({ children }) => {
     const [budgets, setBudgets] = useLocalStorage("budgets",[]);
     const [expenses,setExpenses] = useLocalStorage("expenses",[]);
