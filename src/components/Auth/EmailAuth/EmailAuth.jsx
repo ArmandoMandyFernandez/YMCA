@@ -32,13 +32,13 @@ function EmailAuth({ onLogin }) {
         }
     };
 
-    const logOut = async () => {
-        try {
-            await signOut(auth);
-        } catch (err) {
-            console.error(err);
-        }
-    };
+    // const logOut = async () => {
+    //     try {
+    //         await signOut(auth);
+    //     } catch (err) {
+    //         console.error(err);
+    //     }
+    // };
 
 
     return (
@@ -65,17 +65,13 @@ function EmailAuth({ onLogin }) {
                         Sign In
                     </button>
                 </div>
+                <h4 className="auth__or">OR</h4>
                 <div>
                     <button
                         onClick={signInWithGoogle}
                         className="auth__button-google"
                     >
                         Google Sign In
-                    </button>
-                </div>
-                <div>
-                    <button onClick={logOut} className="auth__button-signin">
-                        Log Out
                     </button>
                 </div>
             </div>

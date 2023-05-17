@@ -25,7 +25,7 @@ function BudgetOverview() {
     return (
         <section className="budgetOverview">
             <div className="budgetOverview-container-header">
-                <h2 className="budgetOverview-header">Budget</h2>
+                <h2 className="budgetOverview-header">Create Your Budget</h2>
                 <div className="budgetOverview-container-buttons">
                 <button className="budgetOverview-header-button-add" onClick={() => setShowAddBudgetModal(true)}>Add Budget</button>
                 <button className="budgetOverview-header-button-expense"

@@ -2,17 +2,20 @@
 
 .benefits {
     display: flex;
+    flex-direction: row;
     margin: 1.5rem 2.25rem;
     padding: 2rem;
+    height: 100vh;
 
     &__subheader{
         color: $secondary-blue-2;
         font-weight: 800;
+        font-size: 1.5rem;
     }
 
     &__description{
         color: $secondary-white;
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 
     &__container {
@@ -20,9 +23,9 @@
         &-image {
             padding: 1rem;
         }
-
-        &-info{
-            
+        &-content{
+            display: flex;
+            flex-direction: column;
         }
     }
 
@@ -32,4 +35,17 @@
     }
 
     
+}
+
+.bidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.bhow{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
 }

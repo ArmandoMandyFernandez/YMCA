@@ -5,6 +5,7 @@ import BenefitsSection from '../../components/BenefitsSection/BenefitsSection';
 
 
 function HomePage(){
+
     
     return(
         <section>
