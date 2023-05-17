@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+\  / |\  /|  /~    /\
+ \/  | \/ | (     /~~\
+ |   |    |  \_  /    \
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+INTRO:
+In its current state YMCA - Your Money Counts Also is the simplest form of a budgeting site. Go on there and interact with the site and start creating your monthly budget. Keeping track of your income and expenses is the first step to creating financial freedome.
 
-## Available Scripts
+#Tech Stack
+- React
+- React Router Dom
+- React Bootstrap Library
+- Firebase Auth
+- Scss
 
-In the project directory, you can run:
+#Features and/or usage instructions
+Features: 
+- Add your Net Income (Net income is the amount of money left over after deducting expenses from the total income from an employer, representing the profit earned by a company or individual. )
 
-### `npm start`
+- Create a customized and categorized budget  (Creating a budget involves planning and allocating your income to different expenses and financial goals to effectively manage your money.)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Keep track of the amount of money you have left over after a month (Net monthly savings refers to the amount of money that remains after subtracting all expenses, including bills, living costs, and other financial obligations, from the total monthly income, representing the portion available for saving or investing.)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Keep track of where you are spending most of your money (Knowing what you spend your money on is important because it provides a clear understanding of your financial habits, helps identify areas where you can make adjustments or cut back, enables you to prioritize your spending based on your goals and values, and ultimately allows for better financial planning and management.)
 
-### `npm test`
+Instructions:
+    1) Create an account and login by clicking the "Let's get started" button or the "Login" button
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    2) Login with your email or Google account.
 
-### `npm run build`
+    3) Once you are logged in you will be greeted with a dashboard and you can start inputting Your Net Monthly Income and Creating a monthly budget.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    4) To insert your net monthly income make sure to click in the input area and input how much money you receive in a monthly basis. Make sure this is net of any taxes of benefits that are taken out from your employer.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    5) After go ahread and start creating your categories for your Budget. The main categories are usually Housing, Utilities, Transportation, Food and Entertainment. You can add as many as you want.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    6) Thereafter you can start tracking your expenses by adding an expense to each category. In example, if you pay your rent, make sure to log it into the the category for housing. If you mistakenly add an expense on the wrong category, don't worry, you can delete it from that category and insert into the right category. 
 
-### `npm run eject`
+    7) Now that you have entered your budget and expenses its your job to keep an eye on the the net monthly savings. The less you spend the more you save. The more you save the more that you can allocate some money into your savings or any investment accounts! Doing so will get you on the road to financial freedom!
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Good Luck!
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-YMCA
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+|\    /| |\   |\  | |\  \  /
+| \  / | |-\  | \ | | >  \/
+|  \/  | |  \ |  \| |/   /
