@@ -40,6 +40,15 @@
 
     &__header {
         font-weight: 600;
+        @include tablet{
+            font-size: 2rem;
+        }
+    }
+
+    &__amount{
+        @include tablet{
+            font-size: 2rem;
+        }
     }
 
     &__button {

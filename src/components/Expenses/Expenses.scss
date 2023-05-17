@@ -25,5 +25,14 @@
 
     &__total{
         font-weight: 800;
+        @include tablet{
+            font-size: 2rem;
+        }
+    }
+
+    &__amount{
+        @include tablet{
+            font-size: 2rem;
+        }
     }
 }

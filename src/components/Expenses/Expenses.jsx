@@ -12,7 +12,7 @@ function Expenses(){
     return(
         <section className='expenses'>
             <h4 className='expenses__total'>Total Spent:</h4>
-            <h4>{currencyFormatter.format(amount)} / {currencyFormatter.format(max)}</h4>
+            <h4 className='expenses__amount'>{currencyFormatter.format(amount)} / {currencyFormatter.format(max)}</h4>
         </section>
     );
 }

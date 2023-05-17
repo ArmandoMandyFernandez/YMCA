@@ -15,7 +15,7 @@ function NetIncome(){
     return(
         <section className='netIncome'>
             <h4 className='netIncome__total'>Net Savings:</h4>
-            <h4>{currencyFormatter.format(netSavings)}</h4>
+            <h4 className='netIncome__amount'>{currencyFormatter.format(netSavings)}</h4>
         </section>
     );
 }
