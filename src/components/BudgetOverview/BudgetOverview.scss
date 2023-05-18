@@ -16,7 +16,7 @@
     padding: 1rem;
     overflow: auto;
 
-    &-container-header{
+    &__container-header{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -31,7 +31,7 @@
             align-items: baseline;
         }
     }
-    &-header{
+    &__header{
         font-weight: 800;
         &-button-add{
             background-color: $secondary-blue-2;
@@ -63,6 +63,14 @@
                 margin-top: 1rem;
 
             }
+        }
+    }
+
+    &__container-buttons{
+        display: flex;
+
+        @include tablet{
+            flex-direction: row;
         }
     }
 

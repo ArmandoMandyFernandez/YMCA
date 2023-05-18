@@ -24,11 +24,11 @@ function BudgetOverview() {
 
     return (
         <section className="budgetOverview">
-            <div className="budgetOverview-container-header">
+            <div className="budgetOverview__container-header">
                 <h2 className="budgetOverview-header">Create Your Budget</h2>
-                <div className="budgetOverview-container-buttons">
-                <button className="budgetOverview-header-button-add" onClick={() => setShowAddBudgetModal(true)}>Add Budget</button>
-                <button className="budgetOverview-header-button-expense"
+                <div className="budgetOverview__container-buttons">
+                <button className="budgetOverview__header-button-add" onClick={() => setShowAddBudgetModal(true)}>Add Budget</button>
+                <button className="budgetOverview__header-button-expense"
                 onClick={openAddExpenseModal}>
                     Add Expense
                 </button>
