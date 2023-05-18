@@ -4,11 +4,14 @@
 .benefits {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 1.5rem 2.25rem;
     padding: 2rem;
-    height: 50rem;
+    height: 60rem;
     @include tablet{
         flex-direction: row; 
+        height: 50rem;
     }
 
 

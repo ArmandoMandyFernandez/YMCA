@@ -30,9 +30,16 @@
 
         
         &-container {
+            width: 100%;
+            padding: 1rem;
+            align-content: center;
+
+            @include tablet{
             width: 50%;
             padding: 1rem;
             background-color: transparent;
+            }
+            
         }
         &-title{
             color: $secondary-blue-2;

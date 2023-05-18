@@ -37,6 +37,9 @@ Instructions:
 
     7) Now that you have entered your budget and expenses its your job to keep an eye on the the net monthly savings. The less you spend the more you save. The more you save the more that you can allocate some money into your savings or any investment accounts! Doing so will get you on the road to financial freedom!
 
+
+
+
 Good Luck!
 
 -YMCA
