@@ -16,8 +16,8 @@
     }
     &__button{
         background-color: $secondary-white;
-        color: $secondary-purple;
-        border: 1px solid $secondary-purple;
+        color: $secondary-blue-2;
+        border: 1px solid $secondary-blue-2;
         font-size: 16px;
         padding: .5rem 1rem;
         border-radius: 12px;
@@ -25,5 +25,5 @@
 }
 
 .modal-content{
-    border: 2px solid $primary-green;
+    border: 2px solid $secondary-blue-2;
 }

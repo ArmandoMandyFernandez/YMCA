@@ -36,7 +36,10 @@
     &__container {
 
         &-image {
-            padding: 1rem;
+            padding: 5rem 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         &-content{
             display: flex;

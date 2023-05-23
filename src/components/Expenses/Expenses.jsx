@@ -14,19 +14,19 @@ function Expenses(){
     if (max === 0) return null;
 
     const data = {
-        labels:['Used', 'Leftover'],
+        labels:['Used     ', 'Leftover'],
         datasets:[
             {
         data: [amount, unused],
         backgroundColor: [
             'rgba(239, 186, 239, 0.5)',
-            'rgba(54, 162, 235, 0.5)',
+            'rgba(71, 148, 235, 0.5)',
         ],
         borderColor:[
             'rgba(239, 186, 239, 1)',
-            'rgba(54, 162, 235, 1)',
+            'rgba(71, 148, 235, 1)',
         ],
-        borderWidth: 1,
+        borderWidth: 2,
     }
     ]
     }
