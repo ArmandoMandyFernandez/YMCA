@@ -1,9 +1,9 @@
-@use '../../styles/variables' as *;
+@use "../../styles/variables" as *;
 
-.beginButton{
+.beginButton {
     padding: 1rem 2rem;
-        border-radius: 8px;
-        color: $secondary-white;
-        background-color: $primary-blue;
-        border: none;
+    border-radius: 8px;
+    color: $secondary-white;
+    background-color: $secondary-blue-2;
+    border: none;
 }

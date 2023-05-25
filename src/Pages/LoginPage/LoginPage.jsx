@@ -1,7 +1,8 @@
 import EmailAuth from '../../components/Auth/EmailAuth/EmailAuth';
 import './LoginPage.scss';
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 import { useEffect } from 'react';
+
 
 
 function LoginPage(){
@@ -33,8 +34,12 @@ function LoginPage(){
 
 
     return(
-        <section className='lidden'>
+        <section className='login lidden'>
             <EmailAuth onLogin={handleSuccessfulLogin}/>
+            <div className='login__container-link'>
+                <h5 className='login__content'> Don't have an Account? <Link to="/register">Register</Link> </h5>
+            </div>
+            
         </section>
     )
 }
