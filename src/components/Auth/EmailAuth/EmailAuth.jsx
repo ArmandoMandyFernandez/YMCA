@@ -1,8 +1,5 @@
 import { auth, googleProvider } from "../../../Config/firebase";
-import {
-    createUserWithEmailAndPassword,
-    signInWithPopup,
-} from "firebase/auth";
+import { createUserWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import "./EmailAuth.scss";
 import { useState } from "react";
 
@@ -32,22 +29,28 @@ function EmailAuth({ onLogin }) {
         <section className="auth">
             <div className="auth__container">
                 <div className="auth__container-email">
-                    <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        placeholder="Email..."
-                        onChange={(e) => setEmail(e.target.value)}
-                        className="auth__input-email"
-                    />
-                    <input
-                        type="password"
-                        name="password"
-                        id="password"
-                        placeholder="Password..."
-                        onChange={(e) => setPassword(e.target.value)}
-                        className="auth__input-password"
-                    />
+                    <label htmlFor="" className="auth__label">
+                        Email:
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Email..."
+                            onChange={(e) => setEmail(e.target.value)}
+                            className="auth__input-email"
+                        />
+                    </label>
+                    <label htmlFor="" className="auth__label">
+                        Password:
+                        <input
+                            type="password"
+                            name="password"
+                            id="password"
+                            placeholder="Password..."
+                            onChange={(e) => setPassword(e.target.value)}
+                            className="auth__input-password"
+                        />
+                    </label>
                     <button className="auth__button-signin" onClick={signIn}>
                         Sign In
                     </button>

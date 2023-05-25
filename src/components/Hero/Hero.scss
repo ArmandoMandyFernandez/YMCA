@@ -12,40 +12,48 @@
     margin-top: 1rem;
     padding: 2.25rem;
 
-    @include tablet{
+    @include tablet {
         justify-content: center;
-        flex-direction: row;
         align-items: center;
         height: 50rem;
-        padding: 2.25rem;
-        margin: 2.25rem;
+        padding: 2rem;
+        margin: auto;
     }
-    
-    &__content{
+
+    @include desktop{
+        flex-direction: row;
+    }
+
+    &__content {
         background-color: transparent;
         font-size: 1rem;
-        @include tablet{
+        @include tablet {
             font-size: 2rem;
         }
 
-        
         &-container {
-            width: 50%;
+            width: 100%;
             padding: 1rem;
-            background-color: transparent;
+            @include tablet {
+                padding: 1.5rem;
+                background-color: transparent;
+            }
+            @include desktop{
+                width: 50%;
+            }
         }
-        &-title{
+        &-title {
             color: $secondary-blue-2;
             font-weight: 800;
             font-size: 1.5rem;
 
-            @include tablet{
+            @include tablet {
                 font-size: 3rem;
                 font-weight: 800;
             }
         }
     }
-    &__button{
+    &__button {
         padding: 1rem 2rem;
         border-radius: 8px;
         color: $secondary-white;
@@ -54,12 +62,12 @@
         transition: 0.3s;
         margin-top: 1rem;
 
-        @include tablet{
+        @include tablet {
             font-size: 2rem;
             font-weight: 800;
         }
     }
-    &__button:hover{
+    &__button:hover {
         background-color: $secondary-blue-3;
     }
     &__image-container {
@@ -69,25 +77,24 @@
         background-color: transparent;
     }
     &__image {
-        width: 20rem;
-        height: 20rem;
+        width: 15rem;
+        height: 15rem;
 
-        @include tablet{
-        width: 40rem;
-        height: 40rem;
-        background-color: transparent; 
+        @include tablet {
+            width: 30rem;
+            height: 30rem;
+            background-color: transparent;
         }
-        
     }
 }
 
-.hidden{
+.hidden {
     opacity: 0;
     filter: blur(5px);
     transition: all 1s;
 }
 
-.show{
+.show {
     opacity: 1;
     filter: blur(0);
     transition: all 1s;

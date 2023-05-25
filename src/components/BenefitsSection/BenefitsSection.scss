@@ -6,11 +6,16 @@
     flex-direction: column;
     margin: 1.5rem 2.25rem;
     padding: 2rem;
-    height: 50rem;
+    height: 70rem;
+
     @include tablet{
-        flex-direction: row; 
+        height: 70rem;
     }
 
+    @include desktop{
+        flex-direction: row;
+        height: 45rem;
+    }
 
 
     &__subheader{
@@ -22,7 +27,6 @@
             font-size: 1.75rem;
         }
     }
-
 
     &__description{
         color: $secondary-white;
@@ -48,8 +52,8 @@
     }
 
     &__image {
-        height: 15rem;
-        width: 25rem;
+        height: 10rem;
+        width: 100%;
 
         @include tablet{
             height: 20rem;
