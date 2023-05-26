@@ -36,7 +36,7 @@
         &-button-add{
             background-color: $secondary-blue-2;
             color: $secondary-white;
-            border-radius: 12px;
+            border-radius: 8px;
             border: none;
             padding: .5rem 1rem;
             transition: 0.3s;
@@ -64,6 +64,10 @@
 
             }
         }
+    }
+
+    &__container-buttons{
+        display: flex;
     }
 
     &__category-container{
