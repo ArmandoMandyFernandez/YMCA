@@ -37,7 +37,7 @@ function LoginPage(){
         <section className='login lidden'>
             <EmailAuth onLogin={handleSuccessfulLogin}/>
             <div className='login__container-link'>
-                <h5 className='login__content'> Don't have an Account? <Link to="/register">Register</Link> </h5>
+                <h5 className='login__content'> Don't have an Account? <Link to="/register" className='login__link'>Register</Link> </h5>
             </div>
             
         </section>

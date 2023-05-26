@@ -11,6 +11,10 @@
     &__content{
         color: $secondary-white;
     }
+
+    &__link{
+        text-decoration: none;
+    }
 }
 
 .lidden{

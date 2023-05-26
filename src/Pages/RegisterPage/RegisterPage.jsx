@@ -36,7 +36,7 @@ function RegisterPage(){
         <section className='register ridden'>
             <Register onSignUp={handleSuccessfulSignUp}/>
             <div className='register__container-link'>
-                <h5 className='register__content'> Already Have an Account? <Link to="/login">Login</Link> </h5>
+                <h5 className='register__content'> Already Have an Account? <Link to="/login" className='register__link'>Login</Link> </h5>
             </div>
         </section>
     )
