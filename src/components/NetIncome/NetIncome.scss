@@ -18,10 +18,15 @@
     
 
     @include tablet{
-        width: 33%;
+        width: 100%;
         height: 30vh;
         padding: 1rem .5rem;
         margin: .5rem;
+    }
+
+    @include desktop{
+        width: 33%;
+        height: 40vh;
     }
 
     &__total{

@@ -28,12 +28,15 @@
 
         @include tablet{
             margin: auto;
+            flex-direction: column;
+            width: 100%;
 
         }
 
-        @include tablet{
+        @include desktop{
             flex-direction: row;
             margin: unset;
+            width: unset;
         }
         
     }

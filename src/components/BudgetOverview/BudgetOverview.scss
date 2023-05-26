@@ -16,7 +16,7 @@
     padding: 1rem;
     overflow: auto;
 
-    &-container-header{
+    &__container-header{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -60,8 +60,6 @@
 
             @include tablet{
                 padding: 1rem 2rem;
-                margin-top: 1rem;
-
             }
         }
     }
