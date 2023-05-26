@@ -27,6 +27,7 @@ function DashboardPage() {
     },[]);
 
     const user = auth.currentUser;
+    console.log(user);
     
     if(!user) return <Navigate to='/login'/>;
 

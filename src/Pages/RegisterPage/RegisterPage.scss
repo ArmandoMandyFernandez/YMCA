@@ -1,15 +1,14 @@
 @use "../../styles/variables" as *;
+@use '../../styles/mixins' as *;
 
-.login{
+.register{
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    align-items: center;
-    &__input{
-        background-color: $secondary-white;
-    }
-
     &__content{
         color: $secondary-white;
+        font-size: 1.5rem;
+        margin-top: 1rem;
     }
 
     &__link{
@@ -17,14 +16,14 @@
     }
 }
 
-.lidden{
+.ridden{
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100%);
     transition: all 1s;
 }
 
-.lhow{
+.rhow{
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);

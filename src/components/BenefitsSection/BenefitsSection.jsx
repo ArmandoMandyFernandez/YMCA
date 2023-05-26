@@ -47,7 +47,7 @@ function BenefitsSection() {
                 </div>
                 <div className="benefits__container-content">
                 <h3 className="benefits__subheader">Achieve Abundance and Prosperity:</h3>
-                <p className="benefits__description">Begin your journey to financial success and enjoy the rewards of diligent budgeting -- a life filled with abundance, freedome, and peace of mind</p>
+                <p className="benefits__description">Begin your journey to financial success and enjoy the rewards of diligent budgeting -- a life filled with abundance, freedom, and peace of mind.</p>
                 </div>
             </div>
             

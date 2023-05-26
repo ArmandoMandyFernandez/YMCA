@@ -45,7 +45,7 @@ function Header() {
                 </div>
                 <div className="navBar__content-profile-container">
                     {!isLoggedIn ? (
-                        <Link to="/login">
+                        <Link to="/login" className="navBar__button">
                             <button className="navBar__button">Login</button>
                         </Link>
                     ) : (

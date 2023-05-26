@@ -9,7 +9,7 @@ function UncatBudgetCard(props){
     if (amount === 0 ) return null;
     
     return(
-        <BudgetCard amount={amount} name="Uncat"{...props}/>
+        <BudgetCard amount={amount} name="Uncategorized"{...props}/>
     )
 }
 

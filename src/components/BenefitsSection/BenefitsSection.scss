@@ -8,12 +8,16 @@
     align-items: center;
     margin: 1.5rem 2.25rem;
     padding: 2rem;
-    height: 60rem;
+    height: 70rem;
+
     @include tablet{
-        flex-direction: row; 
-        height: 50rem;
+        height: 70rem;
     }
 
+    @include desktop{
+        flex-direction: row;
+        height: 45rem;
+    }
 
 
     &__subheader{
@@ -25,7 +29,6 @@
             font-size: 1.75rem;
         }
     }
-
 
     &__description{
         color: $secondary-white;
@@ -39,17 +42,29 @@
     &__container {
 
         &-image {
-            padding: 1rem;
+            padding: 5rem 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
+
         &-content{
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            @include tablet{
+                justify-content: unset;
+                align-items: unset;
+            }
         }
+
     }
 
     &__image {
-        height: 15rem;
-        width: 25rem;
+        height: 10rem;
+        width: 100%;
 
         @include tablet{
             height: 20rem;
