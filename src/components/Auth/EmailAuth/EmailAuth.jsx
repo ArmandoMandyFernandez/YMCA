@@ -54,6 +54,9 @@ function EmailAuth({ onLogin }) {
                     <button className="auth__button-signin" onClick={signIn}>
                         Sign In
                     </button>
+                    <div>
+                        <p className="auth__demo">L: demo1234@email.com PW: demo1234</p>
+                    </div>
                 </div>
                 <h4 className="auth__or">OR</h4>
                 <div>
