@@ -1,5 +1,8 @@
 import { auth, googleProvider } from "../../../Config/firebase";
-import { createUserWithEmailAndPassword, signInWithPopup } from "firebase/auth";
+import {
+    signInWithPopup,
+    signInWithEmailAndPassword,
+} from "firebase/auth";
 import "./EmailAuth.scss";
 import { useState } from "react";
 
@@ -7,9 +10,11 @@ function EmailAuth({ onLogin }) {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
-    const signIn = async () => {
+
+    const signIn = async (e) => {
+        e.preventDefault();
         try {
-            await createUserWithEmailAndPassword(auth, email, password);
+            await signInWithEmailAndPassword(auth, email, password);
             onLogin();
         } catch (err) {
             console.error(err);
@@ -28,7 +33,7 @@ function EmailAuth({ onLogin }) {
     return (
         <section className="auth">
             <div className="auth__container">
-                <div className="auth__container-email">
+                <form className="auth__container-email">
                     <label htmlFor="" className="auth__label">
                         Email:
                         <input
@@ -55,9 +60,11 @@ function EmailAuth({ onLogin }) {
                         Sign In
                     </button>
                     <div>
-                        <p className="auth__demo">L: demo1234@email.com PW: demo1234</p>
+                        <p className="auth__demo">
+                            L: demo1234@email.com PW: demo1234
+                        </p>
                     </div>
-                </div>
+                </form>
                 <h4 className="auth__or">OR</h4>
                 <div>
                     <button
