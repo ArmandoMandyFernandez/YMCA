@@ -4,8 +4,6 @@ import BenefitsSection from '../../components/BenefitsSection/BenefitsSection';
 import FeaturesSection from '../../components/FeaturesSection/FeaturesSection';
 import Footer from '../../components/Footer/Footer';
 
-
-
 function HomePage(){
     return(
         <section>
@@ -16,4 +14,5 @@ function HomePage(){
         </section>
     )
 }
+
 export default HomePage;

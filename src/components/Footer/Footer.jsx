@@ -5,6 +5,7 @@ import linkedin from "../../assets/icons/linkedin.png";
 import { Link } from "react-router-dom";
 
 function Footer() {
+    // Practice moving this into an array and iterating over it, see benefits section :)
     return (
         <section className="footer">
             <h6 className="footer__subheader">Watch This Project Grow</h6>
