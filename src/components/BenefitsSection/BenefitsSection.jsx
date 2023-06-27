@@ -1,9 +1,11 @@
+import React, { useEffect } from 'react'
 import "./BenefitsSection.scss";
 import bag from '../../assets/icons/money-bag.png'
-import { useEffect } from "react";
+import { BENEFITS_LIST } from '../../constants';
 
 
 function BenefitsSection() {
+    // This is nifty, I'm sure there is another way to do it with React.useRef (I wonder how often this is getting repainted / re-rendered as you scroll)
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
@@ -24,6 +26,22 @@ function BenefitsSection() {
         };
     },[]);
 
+    // Consider this list being retrieved from an API, OR passed via props - (e.g. a marketing team makes updates to this somewhere remote and you call an endpoint that returns it)
+    // Focus on how you can make the code work for you, rather than repeating, see below
+    // memoizedBenefits only gets recomputed if the benefitsList (dependency) changes
+    const memoizedBenefits = React.useMemo(() => (
+        <div className="benefits__container-info">
+            {
+            // This list of items can be long and this file size would never change
+            BENEFITS_LIST.map(({ subheader, description}, index) => (
+                <div key={index} className="benefits__container-content">
+                    <h3 className="benefits__subheader">{subheader}</h3>
+                    <p className="benefits__description">{description}</p>
+                </div>
+            ))}
+        </div>
+    ), [])
+
     return (
         <section className="benefits bidden">
             <div className="benefits__container-image">
@@ -32,26 +50,7 @@ function BenefitsSection() {
                 alt="money bag logo" 
                 className="benefits__image"/>
             </div>
-            <div className="benefits__container-info">
-                <div className="benefits__container-content">
-                <h3 className="benefits__subheader">Yearn for Financial Confidence:</h3>
-                <p className="benefits__description">Our budgeting site empowers you to take charge of your money with confidence and clarity</p>
-                </div>
-                <div className="benefits__container-content">
-                <h3 className="benefits__subheader">Maximize Your Savings Potential:</h3>
-                <p className="benefits__description">Discover the magic of our budgeting tools and unlock your full savings potential, bringing your dreams within reach</p>
-                </div>
-                <div className="benefits__container-content">
-                <h3 className="benefits__subheader">Create a Solid Financial Foundation:</h3>
-                <p className="benefits__description">With our comprehensive budgeting features, you can establish a strong financial foundation that will support your goals and aspirations.</p>
-                </div>
-                <div className="benefits__container-content">
-                <h3 className="benefits__subheader">Achieve Abundance and Prosperity:</h3>
-                <p className="benefits__description">Begin your journey to financial success and enjoy the rewards of diligent budgeting -- a life filled with abundance, freedom, and peace of mind.</p>
-                </div>
-            </div>
-            
-            
+            {memoizedBenefits}           
         </section>
     );
 }
